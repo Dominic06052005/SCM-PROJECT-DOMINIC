@@ -72,4 +72,69 @@
                     </div>
                 </div>
                 <button type="button" id="add-education" class="add-btn">Add Education</button>
+ <!-- Experience -->
+                <h3>Experience</h3>
+                <div id="experience-entries">
+                    <div class="experience-entry">
+                        <div class="form-group">
+                            <label for="job-title">Job Title</label>
+                            <input type="text" name="job-title" placeholder="e.g., Software Engineer">
+                        </div>
+                        <div class="form-group">
+                            <label for="company">Company</label>
+                            <input type="text" name="company" placeholder="e.g., Tech Corp">
+                        </div>
+                        <div class="form-group">
+                            <label for="exp-year">Years</label>
+                            <input type="text" name="exp-year" placeholder="e.g., 2020-2023">
+                        </div>
+                        <div class="form-group">
+                            <label for="description">Description</label>
+                            <textarea name="description" placeholder="Describe your responsibilities and achievements"></textarea>
+                            <span class="char-count">0/1000 characters</span>
+                        </div>
+                        <button type="button" class="remove-btn">Remove</button>
+                    </div>
+                </div>
+                <button type="button" id="add-experience" class="add-btn">Add Experience</button>
 
+                <!-- Skills -->
+                <h3>Skills</h3>
+                <div class="form-group">
+                    <label for="skills">Skills (comma-separated)</label>
+                    <input type="text" id="skills" name="skills" placeholder="e.g., JavaScript, Python, Communication">
+                    <span class="hint">Separate skills with commas</span>
+                </div>
+
+                <div class="formmental-form-actions">
+                    <button type="submit" class="submit-btn">Generate Resume</button>
+                    <button type="button" id="reset-form" class="reset-btn">Reset Form</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="preview-section" id="resume-preview">
+            <h2>Resume Preview</h2>
+            <div id="resume-content">
+                <h3 id="preview-name">Your Name</h3>
+                <p id="preview-contact">Email | Phone | Address</p>
+                <h4>Professional Summary</h4>
+                <p id="preview-summary">Your professional summary will appear here.</p>
+                <h4>Education</h4>
+                <ul id="preview-education"></ul>
+                <h4>Experience</h4>
+                <ul id="preview-experience"></ul>
+                <h4>Skills</h4>
+                <ul id="preview-skills"></ul>
+            </div>
+            <button id="download-btn" class="download-btn">Download as PDF</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Resume Builder. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
